@@ -30,7 +30,7 @@
     * <code>dir</code>
     * <code>charset</code>
     * <code>viewport</code>
-    * <code>shortcut icon</code> (optional, but usually suppresses nagging favicon error message; this version is NOT optimal since it pings the site twice)
+    * <code>shortcut icon</code> (optional, but usually suppresses nagging favicon error message; this version is NOT optimal since it pings the site twice; point out that a real favicon ought to be provided for a game)
 4. Review the <code>canvas</code> element in the <code>body</code>
 5. Add CSS:
     * <code>body { margin: 0; }</code> removes default eight pixels
