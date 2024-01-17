@@ -4,7 +4,7 @@
 
 ## Curriculum
 
-Complete curriculum and chunked code for teaching (starter) JavaScript engineering through game design in the browser. There are multiple versions of the final code base, each based on the following proficiency levels:
+Complete curriculum support materials and code for teaching (starter) JavaScript engineering through game design in the browser. There are multiple versions of the final code base, each based on the following proficiency levels:
 - [ ] Novice (learning syntax and computer science thinking)
 - [x] **Beginner (learning app dev and engineering thinking)**
 - [ ] Competent (learning algorithms and paradigm thinking)

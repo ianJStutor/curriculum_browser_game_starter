@@ -21,4 +21,6 @@ function loop(t) {
     //repeat
     requestAnimationFrame(loop);
 }
+
+//init
 requestAnimationFrame(loop);
