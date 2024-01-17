@@ -1,4 +1,4 @@
-# Browser Game Starter (beginner)
+# Browser Game Starter (expert)
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
@@ -30,7 +30,7 @@
     * <code>dir</code>
     * <code>charset</code>
     * <code>viewport</code>
-    * <code>shortcut icon</code> (optional, but usually suppresses nagging favicon error message; this version is NOT optimal since it pings the site twice)
+    * <code>shortcut icon</code> (optional, but suppresses nagging favicon error message)
 4. Review the <code>canvas</code> element in the <code>body</code>
 5. Add CSS:
     * <code>body { margin: 0; }</code> removes default eight pixels
