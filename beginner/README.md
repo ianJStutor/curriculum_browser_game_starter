@@ -8,6 +8,16 @@
 * <code>index.js</code> - JavaScript module for setting up an app
 * <code>fullscreenCanvas.js</code> - JavaScript module for managing a full-screen canvas that self adjusts with browser window resizing
 
+## Topics
+
+* HTML best practices
+* CSS defaults and overrides
+* JS module pattern
+* Possible review:
+    * Event listeners
+    * Destructuring
+    * Closure
+
 ## Lessons
 
 ### 01 - HTML setup
