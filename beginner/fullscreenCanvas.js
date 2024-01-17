@@ -1,5 +1,5 @@
 function fullscreenCanvas(canvas, window) {
-    const ctx = canvas.getContext("2d");
+
     resize();
     window.addEventListener("resize", resize);
 
@@ -9,7 +9,7 @@ function fullscreenCanvas(canvas, window) {
         canvas.height = innerHeight;
     }
 
-    return ctx;
+    return canvas.getContext("2d");
 }
 
 export { fullscreenCanvas };
