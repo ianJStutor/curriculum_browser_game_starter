@@ -33,7 +33,7 @@ function fullscreenCanvas(canvas, window) {
     }
 }
 
-function setResizeCallback(fn) {
+function onResize(fn) {
     if ("function" !== typeof fn) return console?.error?.("fullscreenCanvas error:", "Argument to setResizeCallback() must be a function");
     callback = fn;
 }
@@ -44,4 +44,4 @@ function setDebounceDelay(ms) {
     debounceDelay = Math.abs(ms);
 }
 
-export { fullscreenCanvas, setResizeCallback, setDebounceDelay };
+export { fullscreenCanvas, onResize, setDebounceDelay };
