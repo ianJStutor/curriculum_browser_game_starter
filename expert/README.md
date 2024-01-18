@@ -20,5 +20,7 @@
 
 1. The HTML/CSS and <code>index.js</code> files are not different from the beginner version.
 2. Note that the <code>onResize</code> and <code>setDebounceDelay</code> functions are exported by <code>fullscreenCanvas.js</code> but not (yet) used or even imported in <code>index.js</code>
-3. The <code>callback</code> is an optional function with its own exported setter, <code>onResize</code>. If it exists, it's called in the lifecycle AFTER the canvas is resized in the <code>resize</code> function
-4. The debouncer has a default delay of 100ms. Debouncing offers better performance for processing-heavy games, allowing for smoother resizing at the cost of temporary scroll bars. Point out that users have access to a setter function, <code>setDebounceDelay</code>. Setting <code>debounceDelay</code> to zero disables all debouncing
+3. The debouncer has a default delay of 100ms. Debouncing offers better performance for processing-heavy games, allowing for smoother resizing at the cost of temporary scroll bars. Point out that users have access to a setter function, <code>setDebounceDelay</code>. Setting <code>debounceDelay</code> to zero disables all debouncing
+4. Lifecycle hooks; a common use case for these is to stop/pause the animation loop as soon as there's a resize event then resume once the resizing is completed
+    * <code>onBeforeResize</code> - requires a callback function as an argument and sets it to <code>callbackBefore</code>. This callback function is called before any debouncing meaning it's called with every window resize event, passing in the event object as a parameter
+    * <code>onAfterResize</code> - requires a callback function as an argument and sets it to <code>callbackAfter</code>. This callback function is called after debouncing and after the canvas has been resized
