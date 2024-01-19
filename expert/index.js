@@ -1,9 +1,20 @@
 //dependencies
-import { fullscreenCanvas } from "./fullscreenCanvas.js";
+import { 
+    fullscreenCanvas, 
+    onBeforeResize, 
+    onAfterResize, 
+    setDebounceDelay 
+} from "./fullscreenCanvas.js";
 
 //environment
 const canvas = document.querySelector("canvas");
 const ctx = fullscreenCanvas(canvas, window);
+onBeforeResize(pauseAnimation);
+onAfterResize(init);
+setDebounceDelay(50);
+
+//state
+var canAnimate;
 
 //loop
 function loop(t) {
@@ -16,11 +27,22 @@ function loop(t) {
         ctx.font = "20px Arial";
         ctx.textAlign = "center";
         ctx.textBaseline = "middle";
-        ctx.fillText(`${width}×${height}`, width*0.5, height*0.5);
+        canAnimate
+            ? ctx.fillText(`${width}×${height}`, width*0.5, height*0.5)
+            : ctx.fillText("paused", width*0.5, height*0.5);
     }
     //repeat
-    requestAnimationFrame(loop);
+    if (canAnimate) requestAnimationFrame(loop);
+}
+function pauseAnimation() {
+    canAnimate = false;
 }
 
 //init
-requestAnimationFrame(loop);
+function init() {
+    canAnimate = true;
+    requestAnimationFrame(loop);
+}
+
+//on page load
+init();
