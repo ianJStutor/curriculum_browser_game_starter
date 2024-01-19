@@ -18,7 +18,7 @@
 
 ### 01 - Full-screen canvas module
 
-1. The HTML/CSS and <code>index.js</code> files are not different from the beginner version.
+1. The HTML/CSS and <code>index.js</code> files are not different from the beginner version except for the optional favicon, which uses a very small base64 x-icon in order to avoid not-found errors
 2. Note that the <code>onResize</code> and <code>setDebounceDelay</code> functions are exported by <code>fullscreenCanvas.js</code> but not (yet) used or even imported in <code>index.js</code>
 3. The debouncer has a default delay of 100ms. Debouncing offers better performance for processing-heavy games, allowing for smoother resizing at the cost of temporary scroll bars. Point out that users have access to a setter function, <code>setDebounceDelay</code>. Setting <code>debounceDelay</code> to zero disables all debouncing
 4. Lifecycle hooks; a common use case for these is to stop/pause the animation loop as soon as there's a resize event then resume once the resizing is completed
