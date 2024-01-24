@@ -4,7 +4,7 @@
 
 ## Curriculum
 
-Complete curriculum support materials and code for teaching (starter) JavaScript engineering through game design in the browser. There are multiple versions of the final code base, each based on the following proficiency levels:
+Complete curriculum support materials and code for teaching (starter) JavaScript engineering through game design or generative art in the browser. There are multiple versions of the final code base, each based on the following proficiency levels:
 - [ ] Novice (learning syntax and computer science thinking)
 - [x] **Beginner (learning app dev and engineering thinking)**
 - [ ] Competent (learning algorithms and paradigm thinking)
@@ -19,7 +19,7 @@ Complete curriculum support materials and code for teaching (starter) JavaScript
 
 ## Description
 
-Starter files for any game design project using the browser and the HTML <code>canvas</code> element. Students learn:
+Starter files for any game design or generative art project using the browser and the HTML <code>canvas</code> element. Students learn:
 * Separation of concerns
 * Module pattern
 * Animation loop
@@ -33,4 +33,4 @@ Built with vanilla JavaScript, my favorite flavor!
 
 ## Live Site
 
-> [https://ianjstutor.github.io/curriculum_browser_game_starter/](https://ianjstutor.github.io/curriculum_browser_game_starter/)
+> [https://ianjstutor.github.io/curriculum_canvas_starter/](https://ianjstutor.github.io/curriculum_canvas_starter/)

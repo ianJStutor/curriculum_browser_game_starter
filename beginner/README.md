@@ -30,12 +30,12 @@
     * <code>dir</code>
     * <code>charset</code>
     * <code>viewport</code>
-    * <code>shortcut icon</code> (optional, but usually suppresses nagging favicon error message; this version is NOT optimal since it pings the site twice; point out that a real favicon ought to be provided for a game)
+    * <code>shortcut icon</code> (optional, but usually suppresses nagging favicon error message; this version is NOT optimal since it pings the site twice; point out that a real favicon ought to be provided for an app)
 4. Review the <code>canvas</code> element in the <code>body</code>
 5. Add CSS:
     * <code>body { margin: 0; }</code> removes default eight pixels
     * <code>body { background: black; }</code> is (somewhat) optional, and other colors are, of course, possible. Note, however, that the JS code uses white text, so a black or very dark background is necessary...or reverse the text color for legibility
-    * <code>canvas { position: absolute; }</code> allows for multiple canvases to stack on top of one another as needed by future games (game board and HUD overlay, for example); if only one canvas is being used, optionally <code>canvas { display: block; }</code> will suffice. This CSS correction is needed because <code>canvas</code> elements are inline by default, so there's always a small bit of inline-end character spacing, which causes horizontal scroll bars for full-screen canvases
+    * <code>canvas { position: absolute; }</code> allows for multiple canvases to stack on top of one another as needed by future projects (game board and HUD overlay, for example); if only one canvas is being used, optionally <code>canvas { display: block; }</code> will suffice. Some kind of CSS correction is needed because <code>canvas</code> elements are inline by default, so there's always a small bit of inline-end character spacing, which causes horizontal scroll bars for full-screen canvases
 6. Add <code>script</code> element:
     * Review <code>src</code> attribute; we'll be looking at <code>index.js</code> in lesson 02
     * Review module pattern; note that modules will always be loaded after document parsing (but before the <code>DOMContentLoaded</code> event)
