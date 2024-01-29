@@ -2,6 +2,10 @@
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
+## Live Site
+
+> [https://ianjstutor.github.io/curriculum_canvas_starter/](https://ianjstutor.github.io/curriculum_canvas_starter/)
+
 ## Curriculum
 
 Complete curriculum support materials and code for teaching (starter) JavaScript engineering through game design or generative art in the browser. There are multiple versions of the final code base, each based on the following proficiency levels:
@@ -30,7 +34,3 @@ Built with vanilla JavaScript, my favorite flavor!
 ## Author
 
 > [Ian Marshall](https://ianjstutor.github.io/ian-marshall/)
-
-## Live Site
-
-> [https://ianjstutor.github.io/curriculum_canvas_starter/](https://ianjstutor.github.io/curriculum_canvas_starter/)
